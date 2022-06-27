@@ -626,4 +626,59 @@ body {
   font-size: 16px;
   line-height: 1.38;
   letter-spacing: 0.3px;
+}
+
+.what-we-do {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #03283c;
+}
+.what-we-do__title {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.22;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
+}
+.what-we-do__text {
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+}
+
+.what-we-do-list {
+  display: flex;
+  justify-content: center;
+}
+.what-we-do-list__item {
+  max-width: 380px;
+  position: relative;
+  padding: 35px;
+  border-top: 6px solid #ff6200;
+  background-color: #ffffff;
+}
+.what-we-do-list__item:not(:last-child) {
+  margin-right: 74px;
+}
+.what-we-do-list__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: #010d14;
+}
+.what-we-do-list__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=main.css.map */
