@@ -399,7 +399,7 @@ body {
 
 .hero {
   overflow: hidden;
-  padding-bottom: 253px;
+  padding-bottom: 330px;
 }
 .hero__img {
   position: absolute;
@@ -448,4 +448,41 @@ body {
   transform: scale(1.05);
   color: #ffffff;
   background-color: #03283c;
+}
+
+.under-hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.under-hero-list {
+  display: flex;
+  justify-content: center;
+}
+.under-hero-list__item {
+  text-align: center;
+}
+.under-hero-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+.under-hero-list__span {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.22;
+  text-transform: capitalize;
+  color: #03283c;
+}
+.under-hero-list__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #03283c;
+}
+.under-hero-list__line {
+  max-height: 62px;
+  margin-right: 50px;
+  border: 1px solid rgb(0, 0, 0);
 }/*# sourceMappingURL=main.css.map */

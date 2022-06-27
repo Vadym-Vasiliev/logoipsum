@@ -1,0 +1,43 @@
+.under-hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.under-hero-list {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__span {
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.22;
+    text-transform: capitalize;
+
+    color: $text-032;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+
+    color: $text-032;
+  }
+
+  &__line {
+    max-height: 62px;
+    margin-right: 50px;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+}
