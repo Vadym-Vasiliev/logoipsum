@@ -1,0 +1,98 @@
+.header {
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+  }
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin-left: 30px;
+
+    &.width__submenu {
+      position: relative;
+
+      .submenu {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        display: none;
+
+        &.active {
+          display: block;
+          animation: fade 300ms $cubic;
+        }
+
+        background-color: $secondary-bgc;
+
+        &__link {
+          display: flex;
+          padding: 15px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.25;
+
+          transition: background-color 300ms $cubic;
+
+          color: $white-text;
+
+          &:hover,
+          &:focus {
+            background-color: $accent;
+          }
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $text-010;
+
+    transition: color 300ms $cubic;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+    .submenu__arrow {
+      transform: rotate(0);
+      transition: transform 300ms $cubic;
+      &.active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.header-list-btn {
+  display: flex;
+  margin-left: auto;
+  &__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__btn {
+    transform: scale(1);
+    transition: transform 300ms $cubic, color 300ms $cubic, background-color 300ms $cubic;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+
+      background-color: $secondary-bgc;
+      color: $white-text;
+    }
+  }
+}

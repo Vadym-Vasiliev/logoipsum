@@ -1,0 +1,36 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mulish', sans-serif;
+
+  background-color: $main-bgc;
+  color: $main-text;
+}
+
+.container {
+  width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  background-color: transparent;
+  border-color: transparent;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
