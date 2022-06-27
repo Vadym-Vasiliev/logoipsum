@@ -6,11 +6,10 @@
   padding-bottom: 330px;
   &__img {
     position: absolute;
-    right: 275px;
+    right: -30px;
     bottom: 0;
     top: -105px;
     z-index: -1;
-    object-fit: cover;
   }
 
   &__leftblock {
