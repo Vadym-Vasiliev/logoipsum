@@ -485,4 +485,90 @@ body {
   max-height: 62px;
   margin-right: 50px;
   border: 1px solid rgb(0, 0, 0);
+}
+
+.current-offers {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.current-offers__title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.22;
+  text-transform: capitalize;
+  color: #03283c;
+}
+.current-offers__text {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+.current-offers__under-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-top: 50px;
+}
+
+.offers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.offers-list__item {
+  width: calc((100% - 90px - 30px) / 4);
+  border: 1px solid #e0e5e2;
+  margin: 15px;
+}
+.offers-list__img {
+  margin-bottom: 15px;
+}
+.offers-list__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+.offers-list__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-left: 10px;
+}
+.offers-list__text {
+  padding: 0 15px 0 15px;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+.offers-list__arrow-up {
+  height: 48px;
+  position: relative;
+}
+.offers-list__btn {
+  position: relative;
+  display: inline-block;
+}
+.offers-list__img-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #d6effd;
 }/*# sourceMappingURL=main.css.map */
