@@ -4,18 +4,31 @@
 .hero {
   overflow: hidden;
   padding-bottom: 330px;
+
+  @include mobile {
+    overflow: visible;
+  }
   &__img {
     position: absolute;
-    right: -30px;
+    right: 0;
     bottom: 0;
     top: -105px;
     z-index: -1;
+    width: 780px;
+
+    @include tablet {
+      right: -525px;
+    }
   }
 
   &__leftblock {
     padding-top: 150px;
 
     max-width: 448px;
+
+    @include mobile {
+      margin-left: auto;
+    }
   }
 
   &__subtitle {

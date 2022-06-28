@@ -19,7 +19,7 @@
       <div class="container">
         <div class="header__flex">
           <a href="./index.html" class="header__link">
-            <img src="./img/Logo.svg" alt="logo" />
+            <img src="./img/Logo.svg" class="header__img" alt="logo" />
           </a>
 
           <ul class="header-list">
@@ -43,7 +43,15 @@
             </li>
           </ul>
 
-          <ul class="header-list-btn">
+          <button type="button" class="header__burger" data-menu-button >
+            <svg class="header__svg">
+              <use href="./img/sprite.svg#icon-burger" class="header__svg--burger"></use>
+              <use href="./img/sprite.svg#icon-cross" class="header__svg--cross">
+            </svg>
+          </button>
+
+          <div class="menu-container" data-menu>
+            <ul class="header-list-btn">
             <li class="header-list-btn__item">
               <button type="button" class="header-list-btn__btn btn">Log in</button>
             </li>
@@ -51,6 +59,7 @@
               <button type="button" class="header-list-btn__btn btn">Get started</button>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -523,5 +532,6 @@
     </footer>
 
     <script src="./js/submenu.js" type="module"></script>
-  </body>
+    <script src="./js/burger.js" type="module"></script>
+     </body>
 </html>
