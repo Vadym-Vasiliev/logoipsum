@@ -1,0 +1,48 @@
+.digital {
+  padding-top: 190px;
+  padding-bottom: 230px;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__leftblock {
+    max-width: 600px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.22;
+    text-transform: capitalize;
+
+    color: $text-032;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 0.3px;
+  }
+
+  &__btn {
+    transform: scale(1);
+    transition: transform 300ms $cubic;
+
+    color: $white-text;
+    background-color: $accent;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+}
