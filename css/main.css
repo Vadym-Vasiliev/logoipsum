@@ -782,4 +782,38 @@ body {
   font-size: 16px;
   line-height: 1.38;
   letter-spacing: 0.3px;
+}
+
+.ready {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.ready__title {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.22;
+  text-transform: capitalize;
+  color: #03283c;
+}
+.ready__text {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.3px;
+  color: #010d14;
+}
+.ready__btn {
+  min-width: 450px;
+  transform: scale(1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  background-color: #03283c;
+}
+.ready__btn:hover, .ready__btn:focus {
+  transform: scale(1.05);
 }/*# sourceMappingURL=main.css.map */
