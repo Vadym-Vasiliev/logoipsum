@@ -4,31 +4,16 @@
     align-items: center;
   }
 
-  &__img {
-    @include mobile {
-      width: 400px;
-    }
-  }
-
-  &__burger {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-
-    @include desktop {
-      display: none;
-    }
-  }
+  // &__burger {
+  //   background-color: transparent;
+  //   border: none;
+  //   cursor: pointer;
+  //   margin-left: auto;
+  // }
 
   &__svg {
     width: 54px;
     height: 54px;
-
-    @include mobile {
-      width: 64px;
-      height: 64px;
-    }
   }
 }
 
@@ -92,13 +77,6 @@
       color: $accent;
     }
 
-    @include tablet {
-      font-size: 20px;
-    }
-
-    @include mobile {
-      font-size: 26px;
-    }
     .submenu__arrow {
       transform: rotate(0);
       transition: transform 300ms $cubic;
@@ -112,12 +90,7 @@
 .header-list-btn {
   display: flex;
   margin-left: auto;
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    display: none;
-  }
+
   &__item:not(:last-child) {
     margin-right: 15px;
   }
