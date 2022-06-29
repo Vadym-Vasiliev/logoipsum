@@ -28,16 +28,41 @@
 
 .benefits-list {
   display: flex;
-  justify-content: center;
+  margin: -15px;
+
+  @include desktop {
+    justify-content: center;
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   &__item {
-    max-width: 300px;
+    width: 300px;
     border-top: 6px solid $accent;
 
     background-color: $main-bgc;
 
-    &:not(:last-child) {
-      margin-right: 35px;
+    @include desktop {
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
+
+    @include tablet {
+      width: calc((100% - 30px - 30px) / 2);
+      margin: 15px;
+    }
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 

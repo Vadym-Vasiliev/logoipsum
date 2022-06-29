@@ -46,6 +46,14 @@
     width: calc((100% - 90px - 30px) / 4);
     border: 1px solid #e0e5e2;
     margin: 15px;
+
+    @include tablet {
+      width: calc((100% - 90px - 30px) / 2);
+    }
+
+    @include mobile {
+      width: 300px;
+    }
   }
 
   &__img {

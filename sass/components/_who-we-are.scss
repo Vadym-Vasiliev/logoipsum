@@ -3,14 +3,39 @@
   padding-bottom: 373px;
   position: relative;
   overflow: hidden;
+
+  @include tablet {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @include mobile {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
   &__img {
     position: absolute;
     top: -70px;
     right: 0;
+
+    @include tablet {
+      top: -110px;
+    }
+
+    @include mobile {
+      opacity: 0.1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__content {
     max-width: 535px;
+
+    @include tablet {
+      width: 200px;
+    }
   }
   &__title {
     margin-bottom: 15px;

@@ -7,10 +7,18 @@ body {
 }
 
 .container {
-  width: 1320px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin: 0 auto;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include mobile {
+    width: 480px;
+  }
 }
 
 .btn {

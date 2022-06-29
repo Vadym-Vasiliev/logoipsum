@@ -3,6 +3,11 @@
   padding-bottom: 80px;
   text-align: center;
 
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   background-color: $secondary-bgc;
 
   &__title {

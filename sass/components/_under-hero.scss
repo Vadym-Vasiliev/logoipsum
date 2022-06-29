@@ -1,17 +1,30 @@
 .under-hero {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @include mobile {
+    background-color: $text-032;
+  }
 }
 
 .under-hero-list {
   display: flex;
   justify-content: center;
 
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
   &__item {
     text-align: center;
 
     &:not(:last-child) {
       margin-right: 50px;
+
+      @include mobile {
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -24,6 +37,10 @@
     text-transform: capitalize;
 
     color: $text-032;
+
+    @include mobile {
+      color: $white-text;
+    }
   }
 
   &__text {
@@ -33,11 +50,19 @@
     line-height: 1.2;
 
     color: $text-032;
+
+    @include mobile {
+      color: $white-text;
+    }
   }
 
   &__line {
     max-height: 62px;
     margin-right: 50px;
     border: 1px solid rgba(0, 0, 0, 1);
+
+    @include mobile {
+      display: none;
+    }
   }
 }
