@@ -41,17 +41,13 @@
 
   &__span {
     position: absolute;
-    width: 100%;
-    height: 3px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    height: 3px;
 
     background-color: $accent;
-
-    &.is-open::before {
-      transform: rotate(-45deg);
-    }
   }
 
   &__span::before,
@@ -60,30 +56,37 @@
     position: absolute;
     width: 100%;
     height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: all 300ms $cubic;
 
     background-color: $accent;
   }
 
   &__span::before {
-    transform: translate(-20px, -9px);
+    top: 14px;
   }
 
   &__span::after {
-    transform: translate(-20px, 9px);
+    top: -11px;
   }
 
   &__burger.is-open {
     .header__span::before {
-      transform: rotate(45deg);
-      right: 0;
-    }
-    .header__span::after {
       transform: rotate(-45deg);
+      top: 0;
       left: 0;
     }
-    .header__burger.is-open {
-      transform: scale(0);
+
+    .header__span::after {
+      transform: rotate(45deg);
+      top: 0;
+      left: 0;
+    }
+
+    .header__span {
+      background-color: transparent;
     }
   }
 }
