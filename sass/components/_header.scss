@@ -30,6 +30,7 @@
     display: block;
     cursor: pointer;
     margin-top: 10px;
+    z-index: 2;
 
     @include tablet {
       display: none;
@@ -92,6 +93,23 @@
 }
 
 .menu-burger {
+  @include mobile {
+    display: none;
+  }
+  &.is-open {
+    @include mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      padding: 50px;
+      z-index: 1;
+
+      background-color: $secondary-bgc;
+    }
+  }
   @include tablet {
     display: flex;
     align-items: center;
@@ -106,13 +124,20 @@
   display: flex;
   align-items: center;
 
+  @include desktop {
+    margin-right: 10px;
+  }
+
   @include tablet {
     flex-direction: column;
   }
 
   @include mobile {
-    display: none;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
+
   &__item {
     margin-left: 30px;
 
@@ -143,6 +168,9 @@
 
           color: $white-text;
 
+          @include mobile {
+            justify-content: center;
+          }
           &:hover,
           &:focus {
             background-color: $accent;
@@ -165,6 +193,10 @@
 
     transition: color 300ms $cubic;
 
+    @include mobile {
+      color: $white-text;
+    }
+
     &:hover,
     &:focus {
       color: $accent;
@@ -173,6 +205,8 @@
     .submenu__arrow {
       transform: rotate(0);
       transition: transform 300ms $cubic;
+      fill: $accent;
+
       &.active {
         transform: rotate(180deg);
       }
@@ -193,7 +227,7 @@
   }
 
   @include mobile {
-    display: none;
+    justify-content: center;
   }
 
   &__item:not(:last-child) {
@@ -205,6 +239,9 @@
   }
 
   &__btn {
+    @include mobile {
+      color: $white-text;
+    }
     transform: scale(1);
     transition: transform 300ms $cubic, color 300ms $cubic, background-color 300ms $cubic;
 
@@ -214,6 +251,11 @@
 
       background-color: $secondary-bgc;
       color: $white-text;
+
+      @include mobile {
+        color: $accent;
+        background-color: $white-text;
+      }
     }
   }
 }

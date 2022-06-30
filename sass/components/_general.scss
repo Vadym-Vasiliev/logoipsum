@@ -4,6 +4,10 @@ body {
 
   background-color: $main-bgc;
   color: $main-text;
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 .container {
